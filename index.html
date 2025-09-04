@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="SiteCrafters by Divan Correia – Professional website creation for businesses. Modern, responsive, and tailored web designs at R300.">
   <title>SiteCrafters - Divan Correia</title>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
   <style>
@@ -22,7 +23,17 @@
       color: #fff;
     }
     header h1 { font-size: 3em; margin: 0 0 10px; font-weight: 700; }
-    header p { font-size: 1.3em; margin: 0; opacity: 0.9; }
+    header p { font-size: 1.3em; margin: 0 0 20px; opacity: 0.9; }
+    header a.cta {
+      padding: 15px 30px;
+      background: #fff;
+      color: #6a11cb;
+      border-radius: 8px;
+      font-weight: bold;
+      display: inline-block;
+      transition: 0.3s;
+    }
+    header a.cta:hover { background: #f0f0f0; }
 
     nav {
       display: flex;
@@ -116,6 +127,9 @@
 
     @media (max-width: 600px) {
       .portfolio { flex-direction: column; align-items: center; }
+      header h1 { font-size: 2em; }
+      header p { font-size: 1em; }
+      nav { flex-direction: column; gap: 10px; }
     }
   </style>
 </head>
@@ -124,6 +138,7 @@
   <header>
     <h1>SiteCrafters</h1>
     <p>Crafting Your Digital Presence</p>
+    <a href="#contact" class="cta">Get Started</a>
   </header>
 
   <nav>
@@ -161,7 +176,7 @@
 
   <section id="contact">
     <h2>Contact Me</h2>
-    <form action="mailto:divancorreia468@gmail.com" method="post" enctype="text/plain">
+    <form action="https://formspree.io/f/xeolpgza" method="POST">
       <input type="text" name="name" placeholder="Your Name" required>
       <input type="email" name="email" placeholder="Your Email" required>
       <input type="text" name="phone" placeholder="Your Phone Number" required>
@@ -169,7 +184,9 @@
       <textarea name="message" rows="6" placeholder="Your Message" required></textarea>
       <button type="submit">Send Message</button>
     </form>
-    <p style="text-align:center; margin-top:20px;">Or contact me directly:<br>📞 072 855 0692<br>✉️ divancorreia468@gmail.com</p>
+    <p style="text-align:center; margin-top:20px;">
+      Or contact me directly:<br>📞 072 855 0692<br>✉️ divancorreia468@gmail.com
+    </p>
   </section>
 
   <footer>
