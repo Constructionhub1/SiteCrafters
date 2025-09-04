@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SiteCrafters - Divan Correia</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Roboto', sans-serif;
+      color: #111;
+      background: #f5f7fa;
+      scroll-behavior: smooth;
+    }
+    a { text-decoration: none; color: inherit; }
+
+    header {
+      text-align: center;
+      padding: 80px 20px;
+      background: linear-gradient(135deg, #6a11cb, #2575fc);
+      color: #fff;
+    }
+    header h1 { font-size: 3em; margin: 0 0 10px; font-weight: 700; }
+    header p { font-size: 1.3em; margin: 0; opacity: 0.9; }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      padding: 20px 0;
+      background: #fff;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+    nav a { color: #333; font-weight: 500; transition: color 0.3s; }
+    nav a:hover { color: #6a11cb; }
+
+    section {
+      max-width: 900px;
+      margin: 80px auto;
+      padding: 0 20px;
+    }
+    section h2 {
+      text-align: center;
+      font-size: 2.2em;
+      margin-bottom: 40px;
+      color: #6a11cb;
+      font-weight: 700;
+    }
+    section p { line-height: 1.7; font-size: 1.05em; margin-bottom: 20px; color: #333; }
+
+    .portfolio {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+    }
+    .portfolio a {
+      flex: 1 1 300px;
+      height: 200px;
+      background: #fff;
+      border-radius: 12px;
+      padding: 20px;
+      box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+      transition: transform 0.3s, box-shadow 0.3s;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+    .portfolio a:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 30px rgba(0,0,0,0.12);
+    }
+    .portfolio h3 { color: #6a11cb; margin: 0 0 10px 0; }
+    .portfolio p { margin: 0; color: #555; font-size: 0.95em; }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+    form input, form textarea {
+      padding: 15px;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      font-size: 1em;
+      width: 100%;
+      transition: border 0.3s;
+    }
+    form input:focus, form textarea:focus { border-color: #6a11cb; outline: none; }
+    form button {
+      padding: 15px;
+      font-size: 1.1em;
+      border: none;
+      border-radius: 8px;
+      background: #6a11cb;
+      color: #fff;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+    form button:hover { background: #2575fc; }
+
+    footer {
+      text-align: center;
+      padding: 40px 20px;
+      background: #fff;
+      color: #333;
+      box-shadow: 0 -2px 8px rgba(0,0,0,0.05);
+      font-size: 0.95em;
+    }
+    footer a { color: #6a11cb; margin: 0 10px; }
+
+    @media (max-width: 600px) {
+      .portfolio { flex-direction: column; align-items: center; }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>SiteCrafters</h1>
+    <p>Crafting Your Digital Presence</p>
+  </header>
+
+  <nav>
+    <a href="#about">About</a>
+    <a href="#pricing">Pricing</a>
+    <a href="#portfolio">Portfolio</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <p>At <strong>SiteCrafters</strong>, I create websites that are modern, professional, and tailored to your business. Every design and line of code is crafted with precision, creativity, and purpose.</p>
+    <p>My mission is simple: to help businesses shine online with clean, responsive, and functional websites that leave a lasting impression.</p>
+    <p>Hi, I’m <strong>Divan Correia</strong>. I started building websites for local businesses because I wanted to help them grow digitally. Every project is a chance to combine skill and creativity, turning ideas into beautiful online experiences.</p>
+  </section>
+
+  <section id="pricing">
+    <h2>Pricing</h2>
+    <p style="text-align:center; font-size:1.2em; color:#333;">Professional Website Creation for <strong>R300</strong></p>
+  </section>
+
+  <section id="portfolio">
+    <h2>Portfolio</h2>
+    <div class="portfolio">
+      <a href="https://constructionhub1.github.io/Agape/" target="_blank">
+        <h3>Agape Construction</h3>
+        <p>Full website created for Agape Construction showcasing services and contact info.</p>
+      </a>
+      <a href="https://constructionhub1.github.io/AJ-Construction1/" target="_blank">
+        <h3>AJ Construction</h3>
+        <p>Professional website for AJ Construction with portfolio and service details.</p>
+      </a>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <form action="mailto:divancorreia468@gmail.com" method="post" enctype="text/plain">
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="email" name="email" placeholder="Your Email" required>
+      <input type="text" name="phone" placeholder="Your Phone Number" required>
+      <input type="text" name="subject" placeholder="Subject" required>
+      <textarea name="message" rows="6" placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+    <p style="text-align:center; margin-top:20px;">Or contact me directly:<br>📞 072 855 0692<br>✉️ divancorreia468@gmail.com</p>
+  </section>
+
+  <footer>
+    &copy; 2025 SiteCrafters | Built by Divan Correia | <a href="https://www.facebook.com/profile.php?id=61580291521150" target="_blank">Facebook</a>
+  </footer>
+
+</body>
+</html>
